@@ -40,6 +40,8 @@ Using pandas makes it easier to read csv file,pivot and aggregate data for each 
 The program will output the result to the user_visits.csv file. The result will have a row for each user_id in the data set, and column for each unique page path. 
 The values will be the length of time spend by each user on that path.
 
+For larger dataset, it is better to use a database to aggregate and get final results, because the data might not fit in the memory.
+
 
 ### Another approach:
 If using external library such pandas is not possible, then the alternative approach is to read each file line by line and 
