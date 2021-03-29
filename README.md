@@ -32,6 +32,7 @@ https://public.wiwdata.com/engineering-challenge/data/
 
 The program expects a valid path which can be a http or a local file path, and valid csv files from a-z at the root path.
 It is assumed that all the csv will have same columns.
+
 To transform the data, I have utilized the pandas library. It will read files one by one from a-z and concat to the dataframe.
 Once all the csv files are read, it will pivot the dataframe using user_id column as index, path as columns, and length as value.
 It will also sum the length if a duplicated entry is encountered. For example, a same user_id and path.
